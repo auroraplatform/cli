@@ -1,0 +1,13 @@
+{
+    "name": "aurora-platform-cli",
+    "version": "1.0.0",
+    "description": "Aurora CLI for deploying infrastructure",
+    "bin": {
+      "aurora": "./bin/aurora.js"
+    },
+    "scripts": {},
+    "dependencies": {},
+    "keywords": ["cli", "deploy", "infrastructure"],
+    "license": "MIT"
+  }
+  

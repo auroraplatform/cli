@@ -1,0 +1,35 @@
+# AWS Configuration
+aws_region = "us-east-1"
+
+# Instance Types
+instance_types = {
+  clickhouse = "t3.medium"  # 2 vCPU, 4 GB RAM
+  grafana    = "t3.micro"   # 2 vCPU, 1 GB RAM
+  consumer   = "t3.medium"  # 2 vCPU, 4 GB RAM
+  web_app    = "t3.small"   # 2 vCPU, 2 GB RAM (increased for Docker)
+}
+
+# Tags for resource management
+tags = {
+  Environment = "production"
+  Project     = "kafka-clickhouse-pipeline"
+  Owner       = "your-team"
+  CostCenter  = "data-engineering"
+}
+
+# Optional: Custom VPC settings
+# vpc_cidr = "10.0.0.0/16"
+# subnet_cidr = "10.0.1.0/24"
+
+# Optional: Custom instance configurations
+# clickhouse_root_volume_size = 20
+# grafana_root_volume_size = 10
+# consumer_root_volume_size = 10
+
+# Optional: Custom security group rules
+# additional_clickhouse_ports = [8123, 9000]
+# additional_grafana_ports = [3000]
+# additional_consumer_ports = [22]
+
+# OpenAI API Key for Aurora application
+openai_api_key = "your-openai-api-key-here" 

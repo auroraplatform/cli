@@ -27,12 +27,10 @@ The platform uses Terraform to manage infrastructure as code, allowing for consi
 
 ### Installation
 
-Clone the repository and install dependencies:
+Install via npm:
 
 ```bash
-git clone <repository-url>
-cd deploy
-pip install -r requirements.txt
+npm install -g aurora-platform-cli
 ```
 
 ### Deploying Infrastructure
@@ -40,7 +38,7 @@ pip install -r requirements.txt
 To deploy the infrastructure, run:
 
 ```bash
-./deploy.sh
+aurora deploy
 ```
 
 This script will:
@@ -51,17 +49,14 @@ This script will:
 
 ### Accessing Services
 
-After deployment, you can access:
-- Aurora web app: `http://<web-app-ip>:8000`
-- Grafana dashboard: `http://<grafana-ip>:3000`
-- ClickHouse: `<clickhouse-ip>:8123`
+After deployment, you’ll receive a link to your Aurora web app.
 
 ### Destroying Infrastructure
 
 To tear down the infrastructure, run:
 
 ```bash
-./destroy.sh
+aurora destroy
 ```
 
 This script will:
